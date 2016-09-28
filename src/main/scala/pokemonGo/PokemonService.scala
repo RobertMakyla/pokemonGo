@@ -4,7 +4,8 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import akka.http.scaladsl.server.Directives._
 import akka.stream.ActorMaterializer
-import pokemonGo.Model._
+import pokemonGo.Model.{Pokemon, ServiceJsonProtocol}
+import spray.json.DefaultJsonProtocol._
 
 trait PokemonService {
 
@@ -27,7 +28,7 @@ trait PokemonService {
         }
       } ~ get {
         complete {
-          list.map(_.name).mkString(", ")
+          list
         }
       }
     }
