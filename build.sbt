@@ -1,4 +1,4 @@
-name := "pokemonGo"
+name := "pokemon-go"
 
 version := "1.0"
 
