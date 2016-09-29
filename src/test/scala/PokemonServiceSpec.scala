@@ -39,7 +39,6 @@ class PokemonServiceSpec extends FreeSpec with MustMatchers with ScalatestRouteT
     Get(s"/pokemons") ~> service.route ~> check {
       status mustBe OK
       contentType mustBe `application/json`
-      println("response:: " + responseAs[String])
       responseAs[String] mustBe
         s"""[{
             |  "name": "$name"
