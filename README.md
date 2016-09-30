@@ -11,6 +11,7 @@ To see current pokemons, go to: http://pokemon-go-akka-http.herokuapp.com/pokemo
 Send Http/POST request:
 
 ```bash
-    curl -H 'Content-Type: application/json' -X POST -d '{"name": "monster"}' http://pokemon-go-akka-http.herokuapp.com/pokemons
-    curl -H 'Content-Type: application/json' -X POST -d '{"name": "pikachu"}' http://pokemon-go-akka-http.herokuapp.com/pokemons
+    host=http://pokemon-go-akka-http.herokuapp.com/pokemons
+    curl -H 'Content-Type: application/json' -X POST -d '{"name": "monster"}' $host
+    curl -H 'Content-Type: application/json' -X POST -d '{"name": "pikachu"}' $host
 ```
