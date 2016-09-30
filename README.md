@@ -6,9 +6,10 @@ This application is based on simple **Akka HTTP** project: http://www.yoppworks.
 
 To see current pokemons, go to:
 
-    http://pokemon-go-akka-http.herokuapp.com/pokemons**Adding Pokemon**
+    http://pokemon-go-akka-http.herokuapp.com/pokemons
 
 **Adding Pokemons**
+
 Send Http/POST request:
 
     curl -H 'Content-Type: application/json' -X POST -d '{"name": "monster"}' http://pokemon-go-akka-http.herokuapp.com/pokemons
