@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/pokemon-go
+web: target/universal/stage/bin/pokemon-go -Dhttp.port=$PORT

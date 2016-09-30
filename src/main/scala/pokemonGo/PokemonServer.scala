@@ -1,6 +1,7 @@
 package pokemonGo
 
 import akka.http.scaladsl.Http
+import com.typesafe.config.ConfigFactory
 
 class PokemonServer extends PokemonService {
 
@@ -13,7 +14,7 @@ class PokemonServer extends PokemonService {
 object PokemonServer extends App {
 
   val server = new PokemonServer()
-
-  server.startServer("localhost", 8080)
+  val config = ConfigFactory.load()
+  server.startServer(config.getString("http.interface"), config.getInt("http.port"))
 
 }
