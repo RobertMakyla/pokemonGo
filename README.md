@@ -4,7 +4,9 @@ This application is based on simple **Akka HTTP** project: http://www.yoppworks.
 
 **Seeing Pokemon**
 
-To see current pokemons, go to: http://pokemon-go-akka-http.herokuapp.com/pokemons
+http://pokemon-go-akka-http.herokuapp.com/pokemons
+
+(it may take a while as heroku will probably booting the app)
 
 **Adding Pokemons**
 
